@@ -13,4 +13,33 @@
         margin-right: 100px;
         margin-left: 100px;
     }
+
+    .discount-container {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .content-container1 {
+        padding-left: 70px;
+    }
+
+    .content-container2 {
+        padding-left: 30px;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1535px) {
+    .discount-container {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .content-container1 {
+        padding-left: 100px;
+    }
+
+    .content-container2 {
+
+        padding-left: 75px;
+    }
 }
