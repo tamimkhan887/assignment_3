@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
     <style>
         .primary-font {
             font-family: "Raleway", sans-serif;
@@ -19,7 +20,7 @@
 </head>
 
 <body class="primary-font container mx-auto">
-    <header class="hidden">
+    <header class>
         <!-- nav section  -->
 
         <div class="navbar px-6 pt-4 mb-8 md:px-12 md:pt-9 lg:px-44 lg:pt-14">
@@ -60,7 +61,7 @@
         <!-- bg section  -->
 
         <div
-            class="bg-[url('/images/banner.png')] bg-no-repeat bg-center flex justify-center items-center rounded-3xl  mx-6 mb-8 md:mx-12 lg:mx-44">
+            class="bg-margin bg-[url('/images/banner.png')] bg-no-repeat bg-center flex justify-center items-center rounded-3xl  mx-6 mb-8 md:mx-12 lg:mx-44">
             <div class="flex flex-col justify-center items-center gap-6">
                 <h3 class="text-[#FFF] text-3xl md:text-5xl lg:text-6xl font-bold text-center pt-16">End-to-End Travel
                     with</h3>
@@ -68,22 +69,52 @@
                 <p class="text-[#FFF] text-center text-lg font-normal">Yes, you can run unit tests and view the results
                     directly within the app. The <br>integrated testing features allow for a streamlined .</p>
                 <button
-                    class="btn bg-[#1DD100] rounded-xl py-6 px-8 text-[#030712] text-xl font-bold border-none mb-10 md:mb-20 lg:mb-32">Buy
+                    class="btn btn-ghost bg-[#1DD100] rounded-xl py-7 px-8 text-[#030712] text-xl font-bold border-none mb-10 md:mb-20 lg:mb-32">Buy
                     Ticket</button>
             </div>
         </div>
 
         </div>
 
+        <div class="carts_container md:grid md:grid-cols-2 lg:flex gap-5 justify-center items-center lg:-mt-24 mx-6 mb-8 md:mx-12 lg:mx-44">
+            <!-- cart 1 -->
+            <div class="carts flex justify-center items-center gap-2 p-8 bg-[#FFFFFF] border-b-[3px] border-[#1DD100] rounded-3xl md:w-72">
+                <img src="images/people.png" alt="">
+                <div>
+                    <h3 class="text-4xl text-[#030712] font-bold">500K+</h3>
+                    <p class="text-[#03071299] text-lg font-normal">Registered users</p>
+                </div>
+            </div>
+
+
+            <div class="flex carts justify-center items-center gap-2 p-8 bg-[#FFFFFF] border-b-[3px] border-[#1DD100] rounded-3xl md:w-72">
+                <img src="images/ticket-cupon.png" alt="">
+                <div>
+                    <h3 class="text-4xl text-[#030712] font-bold">1.7 lacks</h3>
+                    <p class="text-[#03071299] text-lg font-normal">Tickets Sold</p>
+                </div>
+            </div>
+
+
+            <div class="flex carts md:col-span-2 justify-center items-center gap-2 p-8 bg-[#FFFFFF] border-b-[3px] border-[#1DD100] rounded-3xl lg:w-72">
+                <img src="images/stoppage.png" alt="">
+                <div>
+                    <h3 class="text-4xl text-[#030712] font-bold">80K+</h3>
+                    <p class="text-[#03071299] text-lg font-normal">Rental partners</p>
+                </div>
+            </div>
+        </div>
+
     </header>
 
 
-    <section class="rounded-lg min-h-screen bg-[#F2F1F1] flex justify-center items-center">
+    <section class="rounded-lg min-h-screen lg:bg-[#F2F1F1] flex justify-center items-center hidden">
         <div class="bg-[#FFF] rounded-2xl flex flex-col justify-center items-center gap-7 py-14 px-20">
             <img src="images/success.png" alt="">
             <h4 class="text-[#27AE60] text-2xl font-bold text-center">SUCCESS</h4>
             <p class="text-center font-medium text-xl text-[#4A4A4A]">Thank you for Booking Our Bus Seats. <br>
-                We are working hard to find the best service and deals for you. <br><span class="font-light">Shortly you will find a confirmation in your email.</span></p>
+                We are working hard to find the best service and deals for you. <br><span class="font-light">Shortly you
+                    will find a confirmation in your email.</span></p>
             <button class="btn rounded-3xl bg-[#27AE60] text-[#FFF] text-xl font-semibold px-24 py-4">Continue</button>
         </div>
     </section>

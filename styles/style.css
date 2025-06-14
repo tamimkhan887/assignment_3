@@ -1,0 +1,16 @@
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .carts_container {
+        display: grid;
+        grid-template-columns: 0.5fr;
+    }
+
+    .carts_container .carts:nth-child(3) {
+        width: 100%;
+        grid-column: span 2;
+    }
+
+    .bg-margin {
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+}
