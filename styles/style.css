@@ -26,6 +26,10 @@
     .content-container2 {
         padding-left: 30px;
     }
+    .xlthik{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 1281px) and (max-width: 1535px) {
